@@ -68,3 +68,45 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+function calcularPerimetroTriangulo() {
+  const input1 = document.getElementById("inputLado1Triangulo");
+  const input2 = document.getElementById("inputLado2Triangulo");
+  const input3 = document.getElementById("inputBaseTriangulo");
+
+  const x1 = Number(input1.value);
+  const x2 = Number(input2.value);
+  const x3 = Number(input3.value);
+
+  const perimetro = perimetroTriangulo(x1, x2, x3);
+  alert(perimetro);
+}
+
+// function calcularAreaTriangulo(){
+//   const input1 = document.getElementById("inputLado1Triangulo");
+//   const input2 = document.getElementById("inputLado2Triangulo");
+//   const input3 = document.getElementById("inputBaseTriangulo");
+
+//   const lado1 = Number(input1.value);
+//   const lado2 = Number(input2.value);
+//   const base = Number(input3.value);
+
+//   const area = areaTriangulo(base, );
+//   alert(area);
+// }
+
+function calcularPerimetroCirculo() {
+  const input = document.getElementById("inputCirculo");
+  const value = input.value;
+
+  const perimetro = perimetroCirculo(value);
+  alert(perimetro);
+}
+
+function calcularAreaCirculo() {
+  const input = document.getElementById("inputCirculo");
+  const value = input.value;
+
+  const area = areaCirculo(value);
+  alert(area);
+}
